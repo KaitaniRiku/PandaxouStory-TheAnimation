@@ -1,0 +1,13 @@
+##
+# Configuration des templates twig
+#
+# Ce fichier de configuration de définir pour chaque template/layout, la liste des pages qui y sont associés
+##
+
+Animation:
+    template: layout_animation.twig
+    pages:
+        - animation
+
+Default:
+	template: layout.twig

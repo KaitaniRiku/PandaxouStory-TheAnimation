@@ -1,0 +1,366 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Open sans';
+  font-size: 100%;
+  background-image: url('../pictures/night-sky-hd-wallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button:focus {
+  outline: none;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(1.15,1.15);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+#starry_sky {
+  position: absolute;
+  width: 1200px;
+  height: 650px;
+  top: 50%;
+  left: 50%;
+  margin-top: -325px;
+  margin-left: -600px;
+  background-image: url('../pictures/sky.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#starry_sky #starry_sky_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+#starry_sky #starry_sky_container #reload_button {
+  display: none;
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -20px;
+  color: #fff;
+  background-color: rgba(255,255,255,0.2) !important;
+  border: 2px #a5d6a7 solid;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+#starry_sky #starry_sky_container #reload_button:hover {
+  text-decoration: none;
+}
+#starry_sky #starry_sky_container #choice_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -185px;
+  margin-top: -20px;
+}
+#starry_sky #starry_sky_container #choice_container p {
+  font-size: 1.3em;
+}
+#starry_sky #starry_sky_container #choice_container .link_song {
+  width: 120px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.2) !important;
+  border: 2px #a5d6a7 solid;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+#starry_sky #starry_sky_container #love_bar {
+  overflow: hidden;
+  position: absolute;
+  right: 15px;
+  top: -25px;
+  width: 40%;
+  height: 20px;
+  background-color: rgba(255,255,255,0.2);
+  border: 2px #a5d6a7 solid;
+  border-radius: 10px;
+}
+#starry_sky #starry_sky_container #love_bar div {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #a5d6a7;
+}
+#starry_sky #starry_sky_container #narrator_bubble {
+  position: absolute;
+  top: 68%;
+  left: -350px;
+  background-color: rgba(165,214,167,0.12);
+  border-left: 5px #81c784 solid;
+  border-right: 5px #81c784 solid;
+  border-radius: 2px;
+  width: 0%;
+  height: 60px;
+}
+#starry_sky #starry_sky_container #narrator_bubble div {
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 100%;
+  margin: auto;
+  padding: 20px 0px 0px 0px;
+}
+#starry_sky #starry_sky_container #narrator_bubble div p {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 320px;
+  font-size: 1.4em;
+}
+#starry_sky #starry_sky_container #to_be_continued {
+  position: absolute;
+  top: 46%;
+  left: 100%;
+  width: 500px;
+}
+#starry_sky #starry_sky_container #to_be_continued p {
+  color: white;
+  font-size: 5em;
+  text-shadow: 0px 0px 8px #fff;
+  font-family: "Comfortaa";
+}
+#starry_sky #starry_sky_container #narrator_bubble2 {
+  position: absolute;
+  top: 68%;
+  right: -10px;
+  background-color: rgba(206,147,216,0.1);
+  border-left: 5px #ce93d8 solid;
+  border-right: 5px #ce93d8 solid;
+  border-radius: 2px;
+  width: 0%;
+  height: 60px;
+}
+#starry_sky #starry_sky_container #narrator_bubble2 div {
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 100%;
+  margin: auto;
+  padding: 20px 0px 0px 0px;
+}
+#starry_sky #starry_sky_container #narrator_bubble2 div p {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 320px;
+  font-size: 1.4em;
+}
+#starry_sky #starry_sky_container #narrator_bubble3 {
+  position: absolute;
+  top: 15%;
+  right: -10px;
+  background-color: rgba(206,147,216,0.1);
+  border-left: 5px #90caf9 solid;
+  border-right: 5px #90caf9 solid;
+  border-radius: 2px;
+  width: 0%;
+  height: 80px;
+}
+#starry_sky #starry_sky_container #narrator_bubble3 div {
+  position: relative;
+  overflow: hidden;
+  width: 420px;
+  height: 100%;
+  margin: auto;
+}
+#starry_sky #starry_sky_container #narrator_bubble3 div p {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 420px;
+  font-size: 1.4em;
+}
+#starry_sky #starry_sky_container #pandaxou,
+#starry_sky #starry_sky_container #sharonoux,
+#starry_sky #starry_sky_container #broken_heart,
+#starry_sky #starry_sky_container #tv,
+#starry_sky #starry_sky_container #timon_pumba,
+#starry_sky #starry_sky_container #sakura_tree,
+#starry_sky #starry_sky_container #cup_tea,
+#starry_sky #starry_sky_container #cup_tea2,
+#starry_sky #starry_sky_container #heart,
+#starry_sky #starry_sky_container #house,
+#starry_sky #starry_sky_container #snowman,
+#starry_sky #starry_sky_container #baby_panda,
+#starry_sky #starry_sky_container #baby_tiger {
+  position: absolute;
+}
+#starry_sky #starry_sky_container #pandaxou,
+#starry_sky #starry_sky_container #broken_heart {
+  display: none;
+}
+#starry_sky #starry_sky_container #pandaxou,
+#starry_sky #starry_sky_container #sharonoux,
+#starry_sky #starry_sky_container #timon_pumba {
+  width: 140px;
+}
+#starry_sky #starry_sky_container #timon_pumba {
+  display: none;
+  bottom: 2%;
+  right: 10%;
+  width: 160px;
+}
+#starry_sky #starry_sky_container #tv {
+  top: 110%;
+  left: 26%;
+  width: 300px;
+}
+#starry_sky #starry_sky_container #sakura_tree {
+  top: 9%;
+  right: -465px;
+  width: 450px;
+  transform: rotateY(180deg);
+}
+#starry_sky #starry_sky_container #house {
+  bottom: 10px;
+  left: -275px;
+  width: 265px;
+}
+#starry_sky #starry_sky_container #snowman {
+  display: none;
+  bottom: 0px;
+  right: 4%;
+  width: 190px;
+}
+#starry_sky #starry_sky_container #baby_panda {
+  display: none;
+  bottom: 20px;
+  left: 40%;
+  width: 110px;
+}
+#starry_sky #starry_sky_container #baby_tiger {
+  display: none;
+  bottom: 10px;
+  left: 50%;
+  width: 100px;
+}
+#starry_sky #starry_sky_container #heart {
+  display: none;
+  top: 45%;
+  left: 50%;
+  margin-left: -33px;
+  width: 66px;
+  animation: pulse 1s linear infinite;
+}
+#starry_sky #starry_sky_container #cup_tea,
+#starry_sky #starry_sky_container #cup_tea2 {
+  display: none;
+  top: 25%;
+  width: 75px;
+}
+#starry_sky #starry_sky_container #cup_tea {
+  left: 43%;
+}
+#starry_sky #starry_sky_container #cup_tea2 {
+  right: 42.5%;
+}
+#starry_sky #starry_sky_container #pandaxou {
+  top: 40%;
+  left: 0px;
+}
+#starry_sky #starry_sky_container #pandaxou #pandaxou_img {
+  width: 100%;
+  padding-bottom: 5px;
+}
+#starry_sky #starry_sky_container #pandaxou #pandaxou_broken_heart_img {
+  position: absolute;
+  top: 52%;
+  right: 24%;
+  width: 45px;
+}
+#starry_sky #starry_sky_container #pandaxou .bubble {
+  position: absolute;
+  bottom: -45px;
+  left: -215px;
+  background-color: rgba(165,214,167,0.12);
+  border: 2px #81c784 solid;
+  border-radius: 10px;
+  width: 330px;
+  height: 44px;
+}
+#starry_sky #starry_sky_container #pandaxou .bubble div {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 100%;
+  margin: auto;
+}
+#starry_sky #starry_sky_container #pandaxou .bubble div p {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 300px;
+  font-size: 1.4em;
+  color: #e8f5e9;
+}
+#starry_sky #starry_sky_container #sharonoux {
+  top: -150px;
+  right: 43%;
+}
+#starry_sky #starry_sky_container #sharonoux #sharonoux_img {
+  width: 100%;
+  padding-bottom: 5px;
+}
+#starry_sky #starry_sky_container #sharonoux #sharonoux_broken_heart_img {
+  position: absolute;
+  top: 52%;
+  right: 24%;
+  width: 45px;
+}
+#starry_sky #starry_sky_container #sharonoux .bubble {
+  position: absolute;
+  bottom: -45px;
+  left: 30px;
+  background-color: rgba(206,147,216,0.1);
+  border: 2px #ce93d8 solid;
+  border-radius: 10px;
+  width: 330px;
+  height: 44px;
+}
+#starry_sky #starry_sky_container #sharonoux .bubble div {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 100%;
+  margin: auto;
+}
+#starry_sky #starry_sky_container #sharonoux .bubble div p {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 300px;
+  font-size: 1.4em;
+  color: #FEFAFF;
+}
+#starry_sky #starry_sky_container #btn-play-pause {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -40px;
+  border-radius: 50%;
+  border: 2px #eee solid;
+  background-color: rgba(255,255,255,0.15);
+  width: 90px;
+  height: 90px;
+}
+#starry_sky #starry_sky_container #btn-play-pause i {
+  font-size: 2em;
+  padding-left: 3px;
+}
