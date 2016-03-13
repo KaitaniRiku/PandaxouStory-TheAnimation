@@ -10,7 +10,7 @@ http://vacherot.etudiant-eemi.com/perso/dossier/malcolm0810/private/s2705/js_ani
 
 - Choisir la piste musical que l'on souhaite appliquer en fond d'animation (When You Believe conseillé)
 - Cliquer sur le bouton "play" qui apparait ensuite
-- Cliquer sur la "pleine lune" pour arrêter la musique
+- Pour arrêter la musique, il est possible d'appuyer sur la "pleine lune"
 
 
 
